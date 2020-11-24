@@ -1,0 +1,3 @@
+/Users/john/Desktop/CodeTp3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/john/Desktop/CodeTp3/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/john/Desktop/CodeTp3/cmake-build-debug/CMakeFiles/CodeTP3.dir
