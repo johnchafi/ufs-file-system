@@ -14,6 +14,7 @@
 #include <fstream>
 #include "disqueVirtuel.h"
 
+
 using namespace std;
 using namespace TP3;
 
@@ -62,6 +63,8 @@ int main (int argc, char **argv)
 					string nameFile;
 					cout << "Entrez le nom du fichier: ";
 					getline(cin, nameFile);
+					//nameFile = "~/Desktop/CodeTp3/" + nameFile;
+                   // cout << "is "<<nameFile;
 					ifstream file(nameFile, std::ios::in);
 					if (file){
 						while ( getline(file, commande) ){

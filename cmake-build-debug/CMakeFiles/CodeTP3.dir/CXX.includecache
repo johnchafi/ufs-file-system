@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/john/Desktop/CodeTp3/block.cpp
-block.h
-/Users/john/Desktop/CodeTp3/block.h
-
 /Users/john/Desktop/CodeTp3/block.h
 string
 -
@@ -22,6 +18,8 @@ disqueVirtuel.h
 iostream
 -
 string
+-
+sstream
 -
 
 /Users/john/Desktop/CodeTp3/disqueVirtuel.h

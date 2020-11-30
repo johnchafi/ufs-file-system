@@ -37,12 +37,17 @@ public:
 	int bd_rm(const std::string& p_Filename);
 
 	// Vous pouvez ajouter ici d'autres méthodes publiques
-
+    int findFreeInode();
+    int findFreeBlock();
+    int createEmptyRepertory(iNode * m_inode);
+    int findRepertoryExist();
 private:
 	// Il est interdit de modifier ce modèle d'implémentation (i.e le type de m_blockDisque)!
     std::vector<Block> m_blockDisque; // Un vecteur de blocs représentant le disque virtuel
 
     // Vous pouvez ajouter ici des méthodes privées
+
+
 };
 
 }//Fin du namespace

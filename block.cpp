@@ -19,6 +19,7 @@ namespace TP3
 	}
 		
 	Block::Block(size_t td){
+
 	}
 	Block::~Block(){
 	}
