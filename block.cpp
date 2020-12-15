@@ -19,11 +19,15 @@ namespace TP3
 	}
 		
 	Block::Block(size_t td){
-
+	    m_type_donnees = td;
 	}
 	Block::~Block(){
+	    m_bitmap.clear();
+	    for(size_t i = 0; i<m_dirEntry.size(); i++)
+        {
+	        delete m_dirEntry[i];
+        }
 	}
-
 }
 
 //}//Fin du namespace

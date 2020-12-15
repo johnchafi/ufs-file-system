@@ -19,10 +19,26 @@ iostream
 -
 string
 -
+fstream
+-
 sstream
 -
 
 /Users/john/Desktop/CodeTp3/disqueVirtuel.h
 block.h
 /Users/john/Desktop/CodeTp3/block.h
+
+/Users/john/Desktop/CodeTp3/main.cpp
+iostream
+-
+string
+-
+vector
+-
+sstream
+-
+fstream
+-
+disqueVirtuel.h
+/Users/john/Desktop/CodeTp3/disqueVirtuel.h
 

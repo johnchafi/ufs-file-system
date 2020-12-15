@@ -37,17 +37,25 @@ public:
 	int bd_rm(const std::string& p_Filename);
 
 	// Vous pouvez ajouter ici d'autres méthodes publiques
-    int findFreeInode();
-    int findFreeBlock();
-    int createEmptyRepertory(iNode * m_inode);
-    int findRepertoryExist();
+
 private:
 	// Il est interdit de modifier ce modèle d'implémentation (i.e le type de m_blockDisque)!
     std::vector<Block> m_blockDisque; // Un vecteur de blocs représentant le disque virtuel
-
     // Vous pouvez ajouter ici des méthodes privées
-
-
+    void createEmptyRepo(int parentInode, int freeInode, int freeBlock );
+    int updateLink(int nbInode);
+    void updateBitmapInode(int inode, bool valide);
+    void updateBitmapBlock(int bloc, bool valide);
+    void displayMessageBlock(bool valide, int bloc);
+    void displayMessageInode(bool valide, int inode);
+    int findFreeBlock();
+    int findFreeInode();
+    bool findRepertoryExist(const std::string path);
+    bool fileExist(const std::string name);
+    int findINodeWithAPath(const std::string path);
+    void updateParentInode(size_t nbInode);
+    void getLastRepo(const std::string pathRepo, std::string& path, std::string& fileName);
+    int countSlashunderscores(const std::string path);
 };
 
 }//Fin du namespace
